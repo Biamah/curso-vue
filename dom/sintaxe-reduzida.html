@@ -1,0 +1,21 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <p>{{ count }}</p>
+    <button @click="calc">Somar 1</button>
+    <input type="text" :value="count">
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            count: 0
+        },
+        methods: {
+            calc() {
+                this.count++;
+            }
+        },
+    });
+</script>
